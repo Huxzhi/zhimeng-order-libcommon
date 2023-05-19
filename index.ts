@@ -1,3 +1,11 @@
+//api 返回格式
+export interface ReturnDto {
+  status: number;
+  success: boolean;
+  message: string;
+  data: any;
+}
+
 export interface FormItem {
   factory: string;
   order: string;
