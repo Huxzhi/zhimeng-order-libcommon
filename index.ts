@@ -54,3 +54,11 @@ export interface SearchKey {
   pageSize: number;
   tag: string;
 }
+
+export interface LogEntiyDto {
+  id?: number;
+  item: FormItem[];
+  tag: string;
+  operator: string;
+  create_time?: string;
+}
