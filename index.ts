@@ -32,7 +32,8 @@ export interface MubanEntiyDto {
   tag: string;
   enabled: boolean;
   operator: string;
-  create_time: string;
+  create_time?: string;
+  update_time?: string;
 }
 
 export interface MubanDto {
@@ -58,7 +59,19 @@ export interface SearchKey {
 export interface LogEntiyDto {
   id?: number;
   item: FormItem[];
+  songhuoNumString: string;
+  songhuoDateString: string;
   tag: string;
+  locked: boolean;
+  locked_operator?: string;
+  credited: boolean;
+  credited_operator?: string;
   operator: string;
   create_time?: string;
+  update_time?: string;
+}
+
+export interface LogDto {
+  data: LogEntiyDto[];
+  total: number;
 }
