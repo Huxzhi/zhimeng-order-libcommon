@@ -6,6 +6,15 @@ export interface ReturnDto {
   data: any;
 }
 
+export interface TagDto {
+  id: number;
+  create_time: string;
+  update_time: string;
+  tag: string;
+  excelOptions: any;
+  operator: string;
+}
+
 export interface FormItem {
   factory: string;
   order: string;
